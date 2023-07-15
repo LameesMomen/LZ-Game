@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LZ - Game</title>
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }  
+    </style>
+</head>
+<body>
+    <div class="fixed text-white ml-3 mt-2 select-none">
+        <span>Score: <span id="scoreEl">0</span></span>
+    </div>
+
+    <div class="absolute top-0 right-0 text-white mr-3 mt-2 select-none">
+        <span>Designed By: <span>Lamees Zaki</span></span>
+    </div>
+
+    <div id="gameOverDiv"  style="display: none;" class="fixed inset-0 flex items-center justify-center">
+        <div class="gameOver p-6 bg-white max-w-md w-full text-center">
+            <h1 id="scorePoints" class="text-4xl font-bold my-1">100</h1>
+            <p class="text-sm text-gray-700">Points</p>
+            <div>
+            <button id="startBtnGame" class="bg-red-500 w-full py-2 my-3 text-white rounded-full">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
